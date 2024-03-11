@@ -1,0 +1,54 @@
+name: Build
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main, release/v** ]
+    paths-ignore:
+      - 'README.md'
+      - 'LICENSE'
+      - 'img/**'
+      - 'benchmarks/**'
+      - 'samples/**'
+      - '*.sln'
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - uses: dotnet/nbgv@master
+      with:
+        setAllVars: true
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '8.0.x'
+        include-prerelease: true
+
+    - name: Restore dependencies
+      run: dotnet restore ConnectSdk.sln
+
+    - name: Build
+      run: dotnet build ConnectSdk.sln --no-restore -c Release
+
+    - name: Test
+      run: dotnet test ConnectSdk.sln --no-build --verbosity normal -c Release -f net8.0
+
+    - name: Pack
+      if: ${{ success() && !github.base_ref }}
+      run: |
+        dotnet pack src/ConnectSdk/ConnectSdk.csproj --no-build --verbosity normal -c Release -o artifacts/ && \
+        dotnet pack src/ConnectSdk.Extensions.AspNetCore.Configuration.Secrets/ConnectSdk.Extensions.AspNetCore.Configuration.Secrets.csproj --no-build --verbosity normal -c Release -o artifacts/ && \
+        dotnet pack src/ConnectSdk.Extensions.DependencyInjection/ConnectSdk.Extensions.DependencyInjection.csproj --no-build --verbosity normal -c Release -o artifacts/
+
+    - name: Push to NuGet
+      if: ${{ success() && !github.base_ref }}
+      run: dotnet nuget push artifacts/**.nupkg -s https://api.nuget.org/v3/index.json --api-key ${{secrets.NUGET_APIKEY}}

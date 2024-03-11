@@ -1,8 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Net;
-using System.Net.Http;
-
-namespace ConnectSdk;
+﻿namespace ConnectSdk;
 
 /// <summary>
 /// An HTTP client wrapper for interacting with 1Password Connect.

@@ -1,8 +1,4 @@
-﻿using ConnectSdk.Utils;
-using System;
-using System.Text.RegularExpressions;
-
-namespace ConnectSdk.Helpers;
+﻿namespace ConnectSdk.Helpers;
 
 /// <summary>
 /// Id generator

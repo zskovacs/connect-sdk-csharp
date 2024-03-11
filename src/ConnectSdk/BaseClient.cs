@@ -1,9 +1,4 @@
-﻿using System.Net;
-using ConnectSdk.Reliability;
-using System;
-using System.Net.Http;
-
-namespace ConnectSdk;
+﻿namespace ConnectSdk;
 
 /// <summary>
 /// The base class for interacting with 1Password Connect API.

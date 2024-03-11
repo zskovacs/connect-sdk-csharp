@@ -19,23 +19,27 @@ This library can be used by dotnet applications to access and manage items in 1P
 
 You can install the SDK using NUGET.
 
-```sh
+```dotnetcli
 dotnet add pacakge 1PasswordConnect.Sdk
 ```
 
 If you want to integrate with HttpClientFactory and Microsoft.Extensions.DependencyInjection
 
-```sh
+```dotnetcli
 dotnet add pacakge 1PasswordConnect.Extensions.DependencyInjection
 ```
 
 ## ✨ Get Started
 
-Refer to [QUICKSTART.md](/QUICKSTART.md) for code examples on how to start using this library.
+Refer to [QUICKSTART.md](/assets/QUICKSTART.md) for code examples on how to start using this library.
+
+## 🌐 Integration with ASP.NET Core (KeyVault)
+
+Refer to [KEYVAULT.md](/assest/KEYVAULT.MD) for examples
 
 ## 💙 Community & Support
 
--   File an [issue](https://github.com/1Password/connect-sdk-js/issues) for bugs and feature requests.
+-   File an [issue](https://github.com/zskovacs/connect-sdk-csharp/issues) for bugs and feature requests.
 -   Join the [Developer Slack workspace](https://join.slack.com/t/1password-devs/shared_invite/zt-1halo11ps-6o9pEv96xZ3LtX_VE0fJQA).
 -   Subscribe to the [Developer Newsletter](https://1password.com/dev-subscribe/).
 
@@ -44,3 +48,5 @@ Refer to [QUICKSTART.md](/QUICKSTART.md) for code examples on how to start using
 1Password requests you practice responsible disclosure if you discover a vulnerability. Please submit discoveries via [BugCrowd](https://bugcrowd.com/agilebits).
 
 For information about security practices, please visit our [Security homepage](https://1password.com/security/).
+
+

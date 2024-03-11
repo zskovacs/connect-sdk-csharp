@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net;
-
-namespace ConnectSdk.Reliability;
+﻿namespace ConnectSdk.Reliability;
 
 /// <summary>
 /// Defines the reliability settings to use on HTTP requests.

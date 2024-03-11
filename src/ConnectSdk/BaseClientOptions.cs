@@ -1,8 +1,4 @@
-﻿using ConnectSdk.Reliability;
-using System;
-using System.Net.Http.Headers;
-
-namespace ConnectSdk;
+﻿namespace ConnectSdk;
 
 /// <summary>
 /// Defines the options to use with the client.

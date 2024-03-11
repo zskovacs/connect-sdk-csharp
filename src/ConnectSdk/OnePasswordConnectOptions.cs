@@ -1,7 +1,4 @@
-﻿using System;
-using System.Net.Http.Headers;
-
-namespace ConnectSdk;
+﻿namespace ConnectSdk;
 
 public class OnePasswordConnectOptions : BaseClientOptions
 {

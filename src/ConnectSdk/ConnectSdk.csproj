@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    
+    <PropertyGroup>
+        <Authors>Zsolt Kovacs</Authors>
+        <Description>1Password Connect SDK for dotnet</Description>
+        <PackageTags>1password;connect;keystore;sdk</PackageTags>
+        <PackageIcon>icon.png</PackageIcon>
+        <PackageProjectUrl>https://1password.com/</PackageProjectUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/zskovacs/connected-sdk-csharp.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <Copyright>Copyright © 2024 1Password Contributors</Copyright>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="../../assets/icon.png" Pack="true" Visible="false" PackagePath="/" />
+        <None Include="../../README.md" Pack="true" Visible="false" PackagePath="/" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+      <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+      <PackageReference Include="System.Text.Json" Version="8.0.2" />
+    </ItemGroup>
+
+</Project>

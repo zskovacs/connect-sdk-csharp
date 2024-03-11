@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E691BD86-C5C4-4B7D-BDEF-B96A77C58BE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectSdk", "src\ConnectSdk\ConnectSdk.csproj", "{3E060C11-760B-41ED-BA50-92055B5920E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{75EE17AD-BD15-40A3-A65F-EA6716E53EBE}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+		README.md = README.md
+		assets\global.json = assets\global.json
+		assets\ConnectSdk.snk = assets\ConnectSdk.snk
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{35F20E46-AB6C-465A-82EA-4B3E4FFE92F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectSdk.Tests", "test\ConnectSdk.Tests\ConnectSdk.Tests.csproj", "{04CF246E-9688-4B0E-B3E9-5B2FEDECC126}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectSdk.Extensions.DependencyInjection", "src\ConnectSdk.Extensions.DependencyInjection\ConnectSdk.Extensions.DependencyInjection.csproj", "{F75C7331-AEF6-423F-B338-E695491CBE2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E060C11-760B-41ED-BA50-92055B5920E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E060C11-760B-41ED-BA50-92055B5920E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E060C11-760B-41ED-BA50-92055B5920E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E060C11-760B-41ED-BA50-92055B5920E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04CF246E-9688-4B0E-B3E9-5B2FEDECC126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04CF246E-9688-4B0E-B3E9-5B2FEDECC126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04CF246E-9688-4B0E-B3E9-5B2FEDECC126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04CF246E-9688-4B0E-B3E9-5B2FEDECC126}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F75C7331-AEF6-423F-B338-E695491CBE2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F75C7331-AEF6-423F-B338-E695491CBE2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F75C7331-AEF6-423F-B338-E695491CBE2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F75C7331-AEF6-423F-B338-E695491CBE2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3E060C11-760B-41ED-BA50-92055B5920E3} = {E691BD86-C5C4-4B7D-BDEF-B96A77C58BE2}
+		{04CF246E-9688-4B0E-B3E9-5B2FEDECC126} = {35F20E46-AB6C-465A-82EA-4B3E4FFE92F5}
+		{F75C7331-AEF6-423F-B338-E695491CBE2A} = {E691BD86-C5C4-4B7D-BDEF-B96A77C58BE2}
+	EndGlobalSection
+EndGlobal

@@ -1,17 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     
     <PropertyGroup>
+        <PackageId>1PasswordConnect.Sdk</PackageId>
         <Authors>Zsolt Kovacs</Authors>
         <Description>1Password Connect SDK for dotnet</Description>
         <PackageTags>1password;connect;keystore;sdk</PackageTags>
         <PackageIcon>icon.png</PackageIcon>
+        <PackageDescription>1Password Connect SDK</PackageDescription>
         <PackageProjectUrl>https://1password.com/</PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <RepositoryUrl>https://github.com/zskovacs/connected-sdk-csharp.git</RepositoryUrl>
+        <RepositoryUrl>https://github.com/zskovacs/connect-sdk-csharp.git</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <Copyright>Copyright © 2024 1Password Contributors</Copyright>
+        <AssemblyName>1PasswordConnect.Sdk</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

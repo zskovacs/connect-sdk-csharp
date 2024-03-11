@@ -20,7 +20,13 @@ This library can be used by dotnet applications to access and manage items in 1P
 You can install the SDK using NUGET.
 
 ```sh
-dotnet add pacakge @1password/connect
+dotnet add pacakge 1PasswordConnect.Sdk
+```
+
+If you want to integrate with HttpClientFactory and Microsoft.Extensions.DependencyInjection
+
+```sh
+dotnet add pacakge 1PasswordConnect.Extensions.DependencyInjection
 ```
 
 ## ✨ Get Started

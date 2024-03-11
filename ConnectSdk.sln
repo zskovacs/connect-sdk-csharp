@@ -11,6 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{75EE17
 		README.md = README.md
 		assets\global.json = assets\global.json
 		assets\ConnectSdk.snk = assets\ConnectSdk.snk
+		assets\QUICKSTART.md = assets\QUICKSTART.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{35F20E46-AB6C-465A-82EA-4B3E4FFE92F5}"

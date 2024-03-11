@@ -1,7 +1,7 @@
 <Project>
     <PropertyGroup>
         <LangVersion>latest</LangVersion>
-        <VersionPrefix>1.0.1</VersionPrefix>
+        <VersionPrefix>1.0.2</VersionPrefix>
         <TargetFramework>netstandard2.1</TargetFramework>
         <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)assets/ConnectSdk.snk</AssemblyOriginatorKeyFile>
         <SignAssembly>true</SignAssembly>

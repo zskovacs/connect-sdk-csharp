@@ -49,24 +49,11 @@ var vaultDetails = await client.GetVaultByIdAsync("vault_id");
 var vaultId = "vault_id";
 
 // Create an Item
-var item = new FullItem
-{
-    Vault = new Vault()
-    {
-        Id = vaultId
-    },
-    Category = ItemCategory.LOGIN, 
-    Fields = new List<Field>()
-    {
-        new Field()
-        {
-            Id = "password",
-            Purpose = FieldPurpose.PASSWORD,
-            Label = "password", 
-            Value = "MySecret"
-        }
-    }
-};
+var item = new ItemBuilder()
+            .SetCategory(ItemCategory.LOGIN)
+            .SetVault(vaultId)
+            .AddField("password", "MySecret1", "MySection", FieldType.STRING, FieldPurpose.PASSWORD)
+            .Build();
 
 var item = await client.CreateVaultItemAsync(vaultId, item);
 

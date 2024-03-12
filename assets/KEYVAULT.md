@@ -1,6 +1,6 @@
 # 1Password Connect Key Vault Secrets configuration provider for Microsoft.Extensions.Configuration
 
-The `1PasswordConnect.Extensions.AspNetCore.Configuration.Secrets` package allows storing configuration values using 1Password Key Vault Secrets.
+The `1Password.Connect.Extensions.AspNetCoreKeyVault` package allows storing configuration values using 1Password Key Vault Secrets.
 
 ## Getting started
 
@@ -9,7 +9,7 @@ The `1PasswordConnect.Extensions.AspNetCore.Configuration.Secrets` package allow
 Install the package with [NuGet][nuget]:
 
 ```dotnetcli
-dotnet add package 1PasswordConnect.Extensions.AspNetCore.Configuration.Secrets
+dotnet add package 1Password.Connect.Extensions.AspNetCoreKeyVault
 ```
 
 ### Prerequisites

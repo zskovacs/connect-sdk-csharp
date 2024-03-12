@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E691BD86-C5C4-4B7D-BDEF-B96A77C58BE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectSdk", "src\ConnectSdk\ConnectSdk.csproj", "{3E060C11-760B-41ED-BA50-92055B5920E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnePassword.Connect.Sdk", "src\OnePassword.Connect.Sdk\OnePassword.Connect.Sdk.csproj", "{3E060C11-760B-41ED-BA50-92055B5920E3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{75EE17AD-BD15-40A3-A65F-EA6716E53EBE}"
 	ProjectSection(SolutionItems) = preProject
@@ -10,18 +10,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{75EE17
 		Directory.Build.props = Directory.Build.props
 		README.md = README.md
 		assets\global.json = assets\global.json
-		assets\ConnectSdk.snk = assets\ConnectSdk.snk
 		assets\QUICKSTART.md = assets\QUICKSTART.md
 		assets\KEYVAULT.md = assets\KEYVAULT.md
+		assets\OnePassword.Connect.snk = assets\OnePassword.Connect.snk
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{35F20E46-AB6C-465A-82EA-4B3E4FFE92F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectSdk.Tests", "test\ConnectSdk.Tests\ConnectSdk.Tests.csproj", "{04CF246E-9688-4B0E-B3E9-5B2FEDECC126}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnePassword.Connect.Sdk.Tests", "test\OnePassword.Connect.Sdk.Tests\OnePassword.Connect.Sdk.Tests.csproj", "{04CF246E-9688-4B0E-B3E9-5B2FEDECC126}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectSdk.Extensions.DependencyInjection", "src\ConnectSdk.Extensions.DependencyInjection\ConnectSdk.Extensions.DependencyInjection.csproj", "{F75C7331-AEF6-423F-B338-E695491CBE2A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnePassword.Connect.Extensions.DependencyInjection", "src\OnePassword.Connect.Extensions.DependencyInjection\OnePassword.Connect.Extensions.DependencyInjection.csproj", "{F75C7331-AEF6-423F-B338-E695491CBE2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectSdk.Extensions.AspNetCore.Configuration.Secrets", "src\ConnectSdk.Extensions.AspNetCore.Configuration.Secrets\ConnectSdk.Extensions.AspNetCore.Configuration.Secrets.csproj", "{AA6FEDF8-3DA0-42B5-B6AC-5FF94232B1E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnePassword.Connect.Extensions.AspNetCoreKeyVault", "src\OnePassword.Connect.Extensions.AspNetCoreKeyVault\OnePassword.Connect.Extensions.AspNetCoreKeyVault.csproj", "{AA6FEDF8-3DA0-42B5-B6AC-5FF94232B1E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

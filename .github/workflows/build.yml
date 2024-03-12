@@ -7,9 +7,6 @@ on:
     paths-ignore:
       - '*.md'
       - 'LICENSE'
-      - 'img/**'
-      - 'benchmarks/**'
-      - 'samples/**'
       - '*.sln'
   pull_request:
     branches: [ main ]

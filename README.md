@@ -35,7 +35,7 @@ Refer to [QUICKSTART.md](/assets/QUICKSTART.md) for code examples on how to star
 
 ## 🌐 Integration with ASP.NET Core (KeyVault)
 
-Refer to [KEYVAULT.md](/assets/KEYVAULT.MD) for examples
+Refer to [KEYVAULT.md](/assets/KEYVAULT.md) for examples
 
 ## 💙 Community & Support
 

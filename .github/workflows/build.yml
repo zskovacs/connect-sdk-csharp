@@ -5,7 +5,7 @@ on:
   push:
     branches: [ main, release/v** ]
     paths-ignore:
-      - 'README.md'
+      - '*.md'
       - 'LICENSE'
       - 'img/**'
       - 'benchmarks/**'

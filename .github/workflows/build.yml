@@ -42,9 +42,9 @@ jobs:
     - name: Pack
       if: ${{ success() && !github.base_ref }}
       run: |
-        dotnet pack src/ConnectSdk/ConnectSdk.csproj --no-build --verbosity normal -c Release -o artifacts/ && \
-        dotnet pack src/ConnectSdk.Extensions.AspNetCore.Configuration.Secrets/ConnectSdk.Extensions.AspNetCore.Configuration.Secrets.csproj --no-build --verbosity normal -c Release -o artifacts/ && \
-        dotnet pack src/ConnectSdk.Extensions.DependencyInjection/ConnectSdk.Extensions.DependencyInjection.csproj --no-build --verbosity normal -c Release -o artifacts/
+        dotnet pack src/OnePassword.Connect.Sdk/OnePassword.Connect.Sdk.csproj --no-build --verbosity normal -c Release -o artifacts/ && \
+        dotnet pack src/OnePassword.Connect.Extensions.AspNetCoreKeyVault/OnePassword.Connect.Extensions.AspNetCoreKeyVault.csproj --no-build --verbosity normal -c Release -o artifacts/ && \
+        dotnet pack src/OnePassword.Connect.Extensions.DependencyInjection/OnePassword.Connect.Extensions.DependencyInjection.csproj --no-build --verbosity normal -c Release -o artifacts/
 
     - name: Push to NuGet
       if: ${{ success() && !github.base_ref }}
